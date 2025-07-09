@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 20px;
+  margin: 0;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  margin-top: 20px;
+  border: 3px solid #444;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.white {
+  background: #eee;
+}
+
+.green {
+  background: #4caf50;
+}
+
+.square img {
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+}
+
+.highlight {
+  outline: 3px solid yellow;
+} 
+/* Add to your existing CSS */
+
+.square.highlight {
+  background-color: #f7ec5b !important; /* yellow */
+}
+
+.square.legal-move::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.4); /* dark dot */
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  top: 20%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
