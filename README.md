@@ -1,5 +1,6 @@
+DSA REAL LIFE PROJECT 2 : BASIC CHESS GAME
 Description:
-Developed a console-based 2-player chess game in C++ that simulates a standard chessboard with piece placement, turn-based logic, and move validation. Incorporated basic object-oriented design using Piece and ChessBoard classes. Integrated basic movement rules and input handling to support human vs. human play. The game includes basic features:
+Developed a console-based 2-player chess game in C++ that includes the following  basic features:
  1. Full Piece Setup
 Initial setup mirrors a standard chess board.
 All pieces are positioned correctly from START_POS.
